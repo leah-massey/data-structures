@@ -26,9 +26,9 @@ class StackTest {
     fun `the last item added is removed from the list and returned`() {
         val underTest = Stack()
         underTest.push("cat")
-        underTest.push("dog")
+        underTest.push(1)
 
-        val expectedReturnValue = "dog"
+        val expectedReturnValue = 1
         val actualReturnValue = underTest.pop()
         assertEquals(expectedReturnValue, actualReturnValue)
 
