@@ -15,8 +15,9 @@ class StackTest {
     @Test
     fun `an item is added to the list`() {
         val underTest = Stack()
+        underTest.push("cat")
         val expected = mutableListOf("cat")
-        val actual = underTest.push("cat")
+        val actual = underTest.stack
 
         assertEquals(expected, actual)
     }
