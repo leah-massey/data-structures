@@ -13,22 +13,10 @@ class Stack() {
     }
 
     fun pop(): Any? {
-
-        if (stack.isEmpty()) {
-            return null
-        } else {
-            val lastItem = stack.last()
-            stack.remove(stack.last())
-            return lastItem
-        }
+       return stack.removeLastOrNull()
     }
+
     fun peek(): Any? {
-
-        if (stack.isEmpty()) {
-            return null
-        } else {
-            return stack.last()
-        }
+        return stack.lastOrNull()
     }
-
 }
